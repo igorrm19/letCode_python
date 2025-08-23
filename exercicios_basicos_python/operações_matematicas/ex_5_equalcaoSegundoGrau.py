@@ -11,26 +11,15 @@ b = 0
 # eq = x = 5
 
 def Primeiro_grau(a,b):
-    if(a == 0):
-        if(b == 0):
-            return 'impossible'
-        else 
-          return  'imposible'
+    if(a == 0 or b == 0):
+        return "Erro a e b não podem ser 0"
     if(b > 0):
         b = -b
-        if(a > 0):
-            a = -a;
-            if(a < 0):
-                a = a
-    if(b < 0):
+    else:
         b = b
-        if(a < 0):
-            a = a
-            if(a > 0):
-                a = -a
     
     return b / a
 
 
-print("A equação do primeiro grau é {}".format(Primeiro_grau(5,0)));
+print("A equação do primeiro grau é, {}".format(Primeiro_grau(5,0)));
 
