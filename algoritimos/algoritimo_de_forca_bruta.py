@@ -1,5 +1,6 @@
 
-#Algoritimos de força bruta
+# Algoritimos de força bruta
+# Algoritimo de comparação
 
 class   Exemplos:
 
@@ -28,5 +29,20 @@ class   Exemplos:
               print(f"Senha encontrada: {tentativa}")
               break
 
+
+  def bubble_sort(lista):
+    n = len(lista)
+    for i in range(n):  # repete várias passagens
+        for j in range(0, n - i - 1):  # percorre elementos vizinhos
+            if lista[j] > lista[j+1]:  # compara
+                lista[j], lista[j+1] = lista[j+1], lista[j]  # troca
+    return lista
+
+ # Exemplo
+  
+  
+
+lista = [5, 1, 4, 2, 8]
+print("Ordenada:", Exemplos.bubble_sort(lista))
 
 Exemplos.Lista()
