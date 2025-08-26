@@ -37,4 +37,5 @@ def merge(esquerda, direita):
 lista = [38, 27, 43, 3, 9, 82, 10]
 print("Lista original:", lista)
 print("Lista ordenada:", Exemplo.merge_sort(lista))
+print(" Adicionado ")
 
