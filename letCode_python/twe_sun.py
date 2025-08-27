@@ -3,15 +3,14 @@
 target = 10
 nums = [0,5,5]
 
-for i in range(len(nums) - 1):
-
-  atual = nums[i]
-  proximo = nums[i + 1]
-  soma = atual + proximo
-
-  if soma == target: 
-    print(f"o target foi encontrado em {i, i+1}")
+for i in range(len(nums)): # numero fixo
+  for j in range(i + 1,len(nums)): # numero apos ele
+    print(nums[i], nums[j]) #
+    soma = nums[i] + nums[j] # 
+    if soma == target: #
+        print([i,j]) #
+    else:
+        print([]) #
     
-  else:
-    print("o target não foi encontrado")
+  
     
